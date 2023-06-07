@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <script>Update("Blue")</script>
+        <title>The Snow Border</title>
+    </head>
+    <header>
+        <div id="topbar">
+            <a href="#">
+                <img src="Images/Menu_Icon.png" alt="Menu" class="mobIcons" id="Menu">
+            </a>
+        <a href="#">
+        <img alt="The Snow Border"  src="Images/LOGO.png" id="logoDesk">
+        <img alt="The Snow Border"   src="Images/LOGO_mobile.png" class="mobIcons" id="logo">
+        </a>
+        <div id="navbar">
+        <a href="#">
+        SNOWBOARDS
+        </a>
+        <a href="#">
+        SPLITBOARDS
+        </a>
+        <a href="#">
+        BOOTS
+        </a>
+        <a href="#">
+        FIXATIONS
+        </a>
+        <a href="#">
+        HOUSSES
+        </a>
+        <a href="#">
+        DIVERS
+        </a>
+        </div>
+        </div>
+        <div id="headicons">
+            <a href="#">
+                <img src="Images/Search_icon.png" alt="Search">
+            </a>
+            <a href="#" id="AccountIcon">
+                <img src="Images/Account_icon.png" alt="Your Account">
+            </a>
+            <a href="#">
+                <img src="Images/Cart_icon.png" alt="Your Cart">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="product">
+            <img id="preview" src="#" alt="Snowboard PowderPunch">
+            <div id="productDesc">
+                <h1 id="productName">THE COLLECTION SNOWBOARD: HYDROGEN</h1>
+                <h2 id="price">2.629,95 €</h2>
+                <form onsubmit="return false">
+                    <span>Couleur</span>
+                    <div>
+                    <button class="formOpt" onclick='Update("Blue")'>BLEU</button>
+                    <button class="formOpt" onclick='Update("Yellow")'>JAUNE</button>
+                    </div>
+                    <span>Taille</span>
+                    <div>
+                    <button class="formOpt" onclick="Update('M')">M</button>
+                    <button class="formOpt" onclick="Update('L')">L</button>
+                    </div>
+                    <div id="scale">
+                        <button onclick="additem()" id="minus" class="quantity">-</button>
+                        <input type="text" name="quantity" class="quantity" value="1">
+                        <button onclick="retractitem()" id="plus" class="quantity">+</button>
+                    </div>
+                    <span id="desc">Nunc porttitor consectetur consequat. Praesent ultricies sagittis tortor in consequat. Fusce aliquet velit ac magna mollis dignissim.</span>
+                    <button id="addToCart" class="buyOpt">AJOUTER AU PANIER</button>
+                    <button id="buyNow" class="buyOpt">ACHETER MAINTENANT</button>
+                </form>
+            </div>
+        </div>
+        <div id="reviewlist">
+        <div id="reviews">
+            <h2>CE QU'ILS EN PENSENT</h2>
+            <p id="average">NaN / 5 (NaN avis)</p>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footnav">
+        <img src="Images/Logo_BIG.png" alt="The Snow Border" id="footerLogo">
+        <ul>
+            <a class="footLink" href="#"><li >Contact us</li></a>
+            <a class="footLink" href="#"><li >About</li></a>
+            <a class="footLink" href="#"><li >Stores</li></a>
+            <a class="footLink" href="#"><li >Help center</li></a>
+            <a class="footLink" href="#"><li >Legal notice</li></a>
+        </ul>
+    </div>
+        <p>© 2023, Test technique Lugus Powered by Shopify</p>
+    </footer>
+</html> 

@@ -1,0 +1,295 @@
+/* ---------------------------------------HEADER----------------------------------- */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right:5%;
+}
+#AccountIcon{
+    display:inline;
+}
+.mobIcons{
+    display:none;
+}
+#topbar{
+    display:flex;
+    flex-wrap:nowrap
+}
+#navbar{
+    display:flex;
+    flex-direction:row;
+}
+#navbar a{
+    align-self: center;
+    margin-left: 20px;
+    color: black;
+    font-family: "Cabin";
+    text-decoration: none;
+}
+#headicons{
+    display:flex;
+    flex-direction:row;
+    justify-self:flex-end;
+    align-self: center;
+}
+#headicons img{
+    margin-left:20px;
+}
+
+/* -------------------------------Footer-------------------------- */
+
+#footnav{
+    display:flex;
+    flex-direction:row;
+}
+#footerLogo{
+    margin:5%
+}
+#footnav ul{
+    align-self:center;
+
+    font-family: "Cabin";
+    list-style-type: none;
+}
+.footLink{
+    text-decoration:none;
+    color:black;    
+}
+footer p{
+    text-align: center;
+    color:#525252;
+    font-family:'Cabin';
+}
+
+/*---------------------------- Produit --------------------------*/
+
+#product{
+    display:flex;
+    flex-direction:row;
+}
+#preview{
+    display:flex;
+    zoom:25%;
+    padding-right:25%;
+    padding-left:25%;
+}
+#productDesc{
+    font-family: "Fjalla One";
+}
+#productDesc h2{
+    color:#4374EF
+}
+form{
+    display:flex;
+    flex-direction:column;
+    font-family:"Cabin";
+    color:#6c6c6c;
+}
+.formOpt{
+    font-family: "Cabin";
+    border-radius:37px;
+    border-color:#4374EF;
+    color:#4374EF;
+    background-color: white;
+    padding:2%;
+    padding-left : 5%;
+    padding-right: 5%;
+    margin-top:2%;
+    margin-right:2%;
+    margin-bottom:2%;
+}
+.formOpt:hover{
+    background-color:#4374EF;
+    color:white;
+}
+#scale{
+    display:flex;
+    flex-direction: row;
+}
+.quantity{
+    border-collapse:collapse;
+    background-color:#4374EF;
+    color:white;
+    padding:2.5%;
+    font-family:"Fjalla One";
+    border-radius:3px;
+}
+input.quantity{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    width:3%;
+    border-radius:0;
+}
+button, input{
+    border-style: solid;
+    border-color:#4374EF
+}
+#minus{
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+}
+#plus{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#desc{
+    color:#525252;
+    display:block;
+    width:60%;
+    margin:5%;
+    margin-left:0;
+}
+.buyOpt{
+    border-radius:3px;
+    font-family:"Roboto";
+    font-weight: 700;
+    font-style: normal;
+    padding:2%;
+    width:30%;
+    margin-bottom:2%;
+}
+#addToCart{
+    background-color:white;
+    color:#4374EF;
+    border-color:#4374EF;
+}
+#buyNow{
+    background-color: #4374EF;
+    border-color: #4374EF;
+    color:white;
+}
+/* ---------------------Avis--------------------- */
+#reviews{
+    display:flex;
+    flex-direction:column;
+}
+#reviews h2{
+    font-family:"Fjalla One";
+    align-self: center;
+}
+#reviews p{
+    font-family:"Cabin";
+    align-self:center;
+    color:#4374EF;
+}
+#reviewlist{
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+
+}
+.review{
+    align-self:center;
+    background-color:#F6F8FC;
+    font-family:"Cabin";
+    padding:1%;
+    border-radius:3px;
+    width :40%;
+    margin-bottom: 2%;
+}
+.review div{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.review span{
+    align-self: center;
+    color: #4374EF;
+}
+.review div + span{
+    color:#B5B5B5;
+}
+
+
+
+
+
+
+
+@media all and (max-width: 393px){
+
+/* -----------------Header Mobile------------------ */
+
+    header{
+        margin-left:1%;
+        margin-right:1%;
+        justify-content: space-between;
+    }
+    #logoDesk{
+        display:none;
+    }
+    .mobIcons{
+        display:inline;
+    }
+    #logo{
+        margin-left:auto
+    }
+    #topbar{
+        display:Flex;
+        width: 60%;
+        justify-content: space-between;
+    }
+    #topbar a{
+        display:flex;
+        align-content:center;
+        flex-wrap:wrap;
+        width:auto;
+    }
+    #navbar{
+        display:none;
+    }
+    #AccountIcon{
+        display:none;
+    }
+    #headicons{
+        width:20%;
+        justify-self: flex-end;
+        display:flex;
+        flex-direction:row;
+    }
+
+    /* -----------------Footer Mobile------------------ */
+    #logo{
+        justify-self:center;
+    }
+    #footerLogo{
+        width:20%;
+        align-self: center;
+    }
+    #footnav{
+        flex-direction: column;
+    }
+    #footnav ul{
+        padding:0;
+    }
+    /* ----------------Produit-------------------- */
+    #product{
+        flex-direction:column;
+    }
+    h1{
+        font-size:larger;
+    }
+    h2{
+        font-size:large;
+    }
+    #desc{
+        width:100%
+    }
+    .buyOpt{
+        width:100%;
+        font-size:larger;
+    }
+    #preview{
+        margin-top:10%;
+        padding-left:40%;
+        padding-right:40%;
+    }
+    
+
+    .review{
+        width:80%;
+    }
+}
